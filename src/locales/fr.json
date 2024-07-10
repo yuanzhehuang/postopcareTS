@@ -1,0 +1,7 @@
+// src/locales/fr.json
+{
+    "home.title": "Soins Postopératoires",
+    "login.button": "Connexion",
+    "doctorDashboard.title": "Tableau de Bord du Médecin",
+    "patientView.title": "Informations pour les Patients"
+  }

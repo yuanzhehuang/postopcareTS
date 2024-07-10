@@ -1,26 +1,37 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
+/**import DoctorDashboard from './pages/DoctorDashboard';
+import PatientView from './pages/PatientView'; 
+import Header from './components/Header'; */
+import Footer from './components/Footer';
+import ProtectedRoute from './components/ProtectedRoute';
+import { IntlProvider } from 'react-intl';
+import en from './locales/en.json';
+import fr from './locales/fr.json';
 
-function App() {
+const messages = {
+  'en': en,
+  'fr': fr
+};
+
+const App: React.FC = () => {
+  const [locale, setLocale] = useState('en');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <IntlProvider messages={messages[locale as keyof typeof messages]} locale={locale}>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </IntlProvider>
   );
-}
+};
 
 export default App;
+
+/*           <Route path="/login" component={Login} />
+          <ProtectedRoute path="/doctor" component={DoctorDashboard} />
+          <Route path="/patient" component={PatientView} /> */

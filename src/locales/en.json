@@ -1,0 +1,7 @@
+// src/locales/en.json
+{
+    "home.title": "Post Operative Care",
+    "login.button": "Login",
+    "doctorDashboard.title": "Doctor Dashboard",
+    "patientView.title": "Patient Information"
+}

@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-postoperativecare-dev-2720f-authRole",
+      "UnauthRoleArn": "arn:aws:iam::844058392837:role/amplify-postoperativecare-dev-2720f-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::844058392837:role/amplify-postoperativecare-dev-2720f-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-postoperativecare-dev-2720f-deployment",
+      "UnauthRoleName": "amplify-postoperativecare-dev-2720f-unauthRole",
+      "StackName": "amplify-postoperativecare-dev-2720f",
+      "StackId": "arn:aws:cloudformation:us-east-1:844058392837:stack/amplify-postoperativecare-dev-2720f/4e308cb0-3956-11ef-ab43-0affd8705dcf",
+      "AmplifyAppId": "d1qkfu4xqj16pt"
+    }
+  }
+}
